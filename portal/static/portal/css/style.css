@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8f4f5;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#topo {
+    background-color: #137984;
+    color: #fff;
+    padding: 18px 24px;
+    text-align: center;
+}
+
+.titulo-topo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#corpo-principal {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    min-height: 0;
+}
+
+#menu-lateral {
+    width: 240px;
+    flex-shrink: 0;
+    background-color: #0f5f67;
+    padding: 16px 12px;
+}
+
+.titulo-menu {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-menu a {
+    display: block;
+    text-decoration: none;
+}
+
+.lista-menu button {
+    width: 100%;
+    background-color: #1aa3b0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.lista-menu button:hover,
+.lista-menu button:focus {
+    background-color: #14818c;
+}
+
+#conteudo-janela {
+    flex: 1;
+    background-color: #fff;
+    padding: 24px;
+    overflow: auto;
+}
+
+.titulo-destaque {
+    color: #137984;
+    margin: 16px 0 8px;
+}
+
+.texto-padrao {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.link {
+    display: inline-block;
+    color: #137984;
+    font-weight: 700;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+#rodape {
+    background-color: #137984;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+}
+
+.texto-rodape {
+    font-size: 0.9rem;
+}
+
+/* Home */
+.secao-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.secao-home .titulo-destaque {
+    width: 100%;
+    text-align: center;
+}
+
+.botao-home-foto {
+    background-color: green;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.botao-home-foto img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+/* Currículos */
+.foto-curriculo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #137984;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Temas livres */
+.foto-tema {
+    display: block;
+    width: min(100%, 200px);
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.foto-dogs {
+    width: min(100%, 300px);
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    #corpo-principal {
+        flex-direction: column;
+    }
+
+    #menu-lateral {
+        width: 100%;
+    }
+
+    .lista-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-menu li {
+        flex: 1 1 140px;
+    }
+
+    #conteudo-janela {
+        padding: 16px;
+    }
+
+    .titulo-topo {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-menu {
+        flex-direction: column;
+    }
+
+    .lista-menu li {
+        flex: 1 1 auto;
+    }
+
+    .foto-curriculo {
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

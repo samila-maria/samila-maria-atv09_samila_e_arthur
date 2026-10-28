@@ -1,0 +1,52 @@
+{% load static %}
+<!-- Samila Maria Pereira Cabral e Arthur Barbosa dos Santos - 523 (ATV09) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samila e Arthur</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'portal/img/logo-ifal.ico' %}">
+    <link rel="stylesheet" href="{% static 'portal/css/style.css' %}">
+</head>
+<body>
+    <header id="topo">
+        <h1 class="titulo-topo">Samila e Arthur</h1>
+    </header>
+
+    <main id="corpo-principal">
+        <nav id="menu-lateral">
+            <h3 class="titulo-menu">MENU</h3>
+            <ul class="lista-menu">
+                {% for item in itens_menu %}
+                    <li>
+                        {% if item.tipo_destino == 'interno' and item.conteudo %}
+                            <a href="{% url 'detalhe_conteudo' item.conteudo.slug %}">
+                                <button type="button">{{ item.titulo }}</button>
+                            </a>
+                        {% elif item.tipo_destino == 'externo' %}
+                            <a href="{{ item.url_externa }}" target="_blank" rel="noopener noreferrer">
+                                <button type="button">{{ item.titulo }}</button>
+                            </a>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <div id="conteudo-janela">
+            {% if conteudo %}
+                {{ conteudo.conteudo_html|safe }}
+            {% else %}
+                <p class="texto-padrao">Nenhum conteúdo disponível.</p>
+            {% endif %}
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <p class="texto-rodape">Samila e Arthur - 523</p>
+        <p class="texto-rodape">Atividade 09 - Migração para Django</p>
+    </footer>
+    <script src="{% static 'portal/js/portal.js' %}"></script>
+</body>
+</html>
