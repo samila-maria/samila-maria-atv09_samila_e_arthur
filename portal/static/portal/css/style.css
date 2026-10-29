@@ -1,20 +1,5 @@
 /* Samila Maria Pereira Cabral e Arthur Barbosa dos Santos - 523 (ATV09) */
 
-:root {
-    --cor-primaria: #0f766e;
-    --cor-primaria-escura: #115e59;
-    --cor-primaria-clara: #ccfbf1;
-    --cor-acento: #14b8a6;
-    --cor-linha: #99f6e4;
-    --cor-fundo: #f1f5f9;
-    --cor-superficie: #ffffff;
-    --cor-texto: #0f172a;
-    --cor-texto-suave: #475569;
-    --cor-borda: #e2e8f0;
-    --sombra-suave: 0 1px 2px rgba(15, 23, 42, .06), 0 6px 16px rgba(15, 23, 42, .06);
-    --raio: 14px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -30,33 +15,27 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
-    line-height: 1.55;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    background-color: #ffffff;
 }
 
 header#topo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 24px;
-    background: linear-gradient(135deg, #0f766e 0%, #0d9488 60%, #14b8a6 100%);
-    color: #ffffff;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, .15);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 .titulo-topo {
     text-align: center;
-    font-size: 1.7rem;
-    font-weight: 700;
-    letter-spacing: .3px;
-    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2e7d32;
+    padding-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 6px;
 }
 
 main#corpo-principal {
@@ -64,30 +43,24 @@ main#corpo-principal {
     display: flex;
     flex-direction: row;
     flex: 1;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
 }
 
 nav#menu-lateral {
     flex: 0 0 20%;
+    background-color: #f1f8e9;
     min-height: 550px;
-    padding: 18px 14px 24px;
-    background-color: var(--cor-superficie);
-    border: 1px solid var(--cor-borda);
-    border-radius: var(--raio);
-    box-shadow: var(--sombra-suave);
+    padding: 10px 0 20px;
     box-sizing: border-box;
 }
 
 .titulo-menu {
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--cor-texto-suave);
-    padding: 0 8px;
-    margin-bottom: 12px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2e7d32;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .lista-menu {
@@ -95,7 +68,7 @@ nav#menu-lateral {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 0;
+    padding: 0 10px;
 }
 
 .item-menu {
@@ -103,81 +76,59 @@ nav#menu-lateral {
     width: 100%;
     text-align: center;
     text-decoration: none;
-    font-size: .95rem;
-    font-weight: 600;
-    color: var(--cor-primaria-escura);
-    background-color: #f8fafc;
-    border: 1px solid var(--cor-borda);
-    border-radius: 10px;
-    padding: 10px 14px;
-    transition: background-color .18s ease, color .18s ease,
-                border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #1b5e20;
+    background-color: #ffffff;
+    border: 1px solid #2e7d32;
+    border-radius: 4px;
+    padding: 8px 10px;
 }
 
 .item-menu:hover,
 .item-menu:focus {
-    background-color: var(--cor-primaria-clara);
-    border-color: var(--cor-acento);
-    color: var(--cor-primaria-escura);
-    transform: translateX(3px);
-    box-shadow: 0 4px 12px rgba(20, 184, 166, .18);
+    background-color: #dcedc8;
 }
 
 .item-menu.ativo {
-    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
-    border-color: transparent;
+    background-color: #2e7d32;
     color: #ffffff;
-    box-shadow: 0 6px 16px rgba(15, 118, 110, .30);
 }
 
 #conteudo-janela {
     flex: 1;
-    padding: 28px;
-    background-color: var(--cor-superficie);
-    border: 1px solid var(--cor-borda);
-    border-radius: var(--raio);
-    box-shadow: var(--sombra-suave);
+    padding: 20px;
     box-sizing: border-box;
     overflow-wrap: anywhere;
 }
 
 .foto {
-    border-radius: 50%;
-    border: 3px solid var(--cor-primaria);
+    border-radius: 100%;
+    border: 2px solid #137984;
     object-fit: cover;
     object-position: top;
     width: 100%;
     max-width: 200px;
     height: auto;
     display: block;
-    margin-bottom: 18px;
-    box-shadow: var(--sombra-suave);
+    margin-bottom: 15px;
 }
 
 .link {
     display: inline-block;
-    font-weight: 600;
-    color: var(--cor-primaria);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    color: #137984;
     margin-right: 12px;
     margin-bottom: 8px;
-    transition: color .18s ease, border-color .18s ease;
-}
-
-.link:hover,
-.link:focus {
-    color: var(--cor-primaria-escura);
-    border-bottom-color: currentColor;
 }
 
 .titulo-destaque {
-    color: var(--cor-primaria);
-    border-bottom: 2px solid var(--cor-linha);
-    padding-bottom: 6px;
-    margin-bottom: 16px;
+    color: #2e7d32;
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
     margin-top: 20px;
-    font-weight: 700;
 }
 
 #home {
@@ -186,7 +137,6 @@ nav#menu-lateral {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
 }
 
 #home .titulo-destaque {
@@ -195,84 +145,69 @@ nav#menu-lateral {
 }
 
 .texto-padrao {
-    color: var(--cor-texto);
-    font-size: 1.05rem;
+    color: black;
+    font-family: courier, monospace;
+    font-size: 110%;
     margin-bottom: 10px;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .botao-com-icone {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
-    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 20%;
     border: none;
-    border-radius: 50%;
     cursor: pointer;
     margin: 10px;
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(15, 118, 110, .28);
-    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
-}
-
-.botao-com-icone:hover,
-.botao-com-icone:focus {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 14px 28px rgba(15, 118, 110, .35);
-    filter: brightness(1.06);
 }
 
 .botao-com-icone img {
-    width: 110px;
-    height: 110px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
-    border: 3px solid #ffffff;
-    display: block;
 }
 
 footer#rodape {
-    background-color: #134e4a;
-    color: #ccfbf1;
+    background-color: #2e7d32;
+    color: white;
     text-align: center;
-    padding: 18px 16px;
+    padding: 15px;
+    font-family: sans-serif;
 }
 
 .texto-rodape {
-    font-size: .85rem;
-    color: #ccfbf1;
+    font-size: 13px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .foto-tema {
     display: block;
-    width: min(100%, 220px);
-    margin-bottom: 12px;
-    border: 1px solid var(--cor-borda);
-    border-radius: 12px;
-    box-shadow: var(--sombra-suave);
+    width: min(100%, 200px);
+    border: 1px solid #000;
+    margin-bottom: 10px;
 }
 
 .foto-dogs {
-    width: min(100%, 320px);
+    width: min(100%, 300px);
     cursor: pointer;
-    border: 1px solid var(--cor-borda);
-    border-radius: 12px;
-    box-shadow: var(--sombra-suave);
-    transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.foto-dogs:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 24px rgba(15, 23, 42, .18);
+    border: 1px solid #000;
 }
 
 @media screen and (max-width: 767px) {
     main#corpo-principal {
         flex-direction: column;
-        gap: 14px;
-        padding: 14px;
     }
 
     nav#menu-lateral {
@@ -292,25 +227,14 @@ footer#rodape {
         flex: 1 1 140px;
     }
 
-    .item-menu:hover,
-    .item-menu:focus {
-        transform: none;
-    }
-
     #conteudo-janela {
         width: 100%;
-        padding: 20px;
     }
 
     #home {
         height: auto;
         min-height: 0;
         padding: 20px 0;
-    }
-
-    .botao-com-icone img {
-        width: 92px;
-        height: 92px;
     }
 }
 
@@ -321,10 +245,6 @@ footer#rodape {
 
     .lista-menu li {
         flex: 1 1 auto;
-    }
-
-    .titulo-topo {
-        font-size: 1.35rem;
     }
 
     .foto {
