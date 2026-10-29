@@ -4,12 +4,16 @@
 **Turma:** 523  
 **Atividade:** Migração do portal (ATV06) para Django
 
+Pasta de entrega: `ATV09_Samila_Arthur`
+
 ## Descrição
 
 Portal institucional da dupla, migrado da ATV06 para Django. O layout (cabeçalho, menu, área de conteúdo e rodapé) fica nos templates. Os textos das páginas e os itens do menu são cadastrados no Django Admin e lidos do banco de dados.
 
 - Conteúdos internos: Início, Currículo Samila, Tema livre Samila, Currículo Arthur, Tema livre Arthur
 - Links externos: GitHub Samila e GitHub Arthur
+
+Alterações feitas no Admin (ativar/desativar, reordenar o menu, editar HTML) aparecem no portal sem mudar o template.
 
 ## Tecnologias
 
@@ -20,7 +24,7 @@ Portal institucional da dupla, migrado da ATV06 para Django. O layout (cabeçalh
 
 ## Como executar
 
-Os comandos abaixo devem ser rodados na pasta do projeto Django (`atv09_samila_e_arthur`), onde está o arquivo `manage.py`.
+Os comandos abaixo devem ser rodados na pasta do projeto Django, onde está o arquivo `manage.py`.
 
 ### 1. Ambiente virtual
 
@@ -73,4 +77,8 @@ python manage.py runserver
 - Portal: http://127.0.0.1:8000/
 - Django Admin: http://127.0.0.1:8000/admin/
 
-No Admin é possível cadastrar, editar, ativar/desativar e reordenar conteúdos e itens de menu. As mudanças aparecem no portal sem alterar o template.
+No Admin é possível cadastrar, editar, ativar/desativar e reordenar conteúdos e itens de menu.
+
+## GitHub
+
+Publique este projeto em um repositório da dupla no GitHub e informe o link na entrega do Classroom.

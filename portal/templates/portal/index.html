@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samila e Arthur</title>
+    <title>{% if conteudo %}{{ conteudo.titulo }} | {% endif %}Samila e Arthur</title>
     <link rel="icon" type="image/x-icon" href="{% static 'portal/img/logo-ifal.ico' %}">
     <link rel="stylesheet" href="{% static 'portal/css/style.css' %}">
 </head>
@@ -15,18 +15,22 @@
     </header>
 
     <main id="corpo-principal">
-        <nav id="menu-lateral">
+        <nav id="menu-lateral" aria-label="Menu principal">
             <h3 class="titulo-menu">MENU</h3>
             <ul class="lista-menu">
                 {% for item in itens_menu %}
                     <li>
-                        {% if item.tipo_destino == 'interno' and item.conteudo %}
-                            <a href="{% url 'detalhe_conteudo' item.conteudo.slug %}">
-                                <button type="button">{{ item.titulo }}</button>
+                        {% if item.eh_externo %}
+                            <a class="item-menu{% if item.url_externa == request.path %} ativo{% endif %}"
+                               href="{{ item.destino_url }}"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                {{ item.titulo }}
                             </a>
-                        {% elif item.tipo_destino == 'externo' %}
-                            <a href="{{ item.url_externa }}" target="_blank" rel="noopener noreferrer">
-                                <button type="button">{{ item.titulo }}</button>
+                        {% else %}
+                            <a class="item-menu{% if conteudo and item.conteudo and item.conteudo.slug == conteudo.slug %} ativo{% endif %}"
+                               href="{{ item.destino_url }}">
+                                {{ item.titulo }}
                             </a>
                         {% endif %}
                     </li>

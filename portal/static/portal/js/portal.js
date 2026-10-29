@@ -4,11 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    var dogs = [
-        "/static/portal/img/dog1.jpg",
-        "/static/portal/img/dog2.jpg",
-        "/static/portal/img/dog3.jpg",
-    ];
+    var pasta = "/static/portal/img/";
+    var dogs = [pasta + "dog1.jpg", pasta + "dog2.jpg", pasta + "dog3.jpg"];
     var indice = 0;
 
     img.addEventListener("click", function () {

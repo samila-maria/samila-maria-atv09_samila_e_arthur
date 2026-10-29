@@ -1,11 +1,13 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
 from .models import Conteudo
 
 
 def home(request):
-    conteudo_home = Conteudo.objects.filter(ativo=True).first()
-    return render(request, 'portal/index.html', {'conteudo': conteudo_home})
+    conteudo = Conteudo.objects.filter(slug='inicio', ativo=True).first()
+    if conteudo is None:
+        conteudo = Conteudo.objects.filter(ativo=True).first()
+    return render(request, 'portal/index.html', {'conteudo': conteudo})
 
 
 def detalhe_conteudo(request, slug):

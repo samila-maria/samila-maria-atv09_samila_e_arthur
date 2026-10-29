@@ -1,7 +1,9 @@
+/* Samila Maria Pereira Cabral e Arthur Barbosa dos Santos - 523 (ATV09) */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -10,12 +12,179 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e8f4f5;
-    color: #1a1a1a;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #ffffff;
+}
+
+header#topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.titulo-topo {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2e7d32;
+    padding-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+main#corpo-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+nav#menu-lateral {
+    flex: 0 0 20%;
+    background-color: #f1f8e9;
+    min-height: 550px;
+    padding: 10px 0 20px;
+    box-sizing: border-box;
+}
+
+.titulo-menu {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2e7d32;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 10px;
+}
+
+.item-menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #1b5e20;
+    background-color: #ffffff;
+    border: 1px solid #2e7d32;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.item-menu:hover,
+.item-menu:focus {
+    background-color: #dcedc8;
+}
+
+.item-menu.ativo {
+    background-color: #2e7d32;
+    color: #ffffff;
+}
+
+#conteudo-janela {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+.foto {
+    border-radius: 100%;
+    border: 2px solid #137984;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link {
+    display: inline-block;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    color: #137984;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.titulo-destaque {
+    color: #2e7d32;
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#home {
+    min-height: calc(550px - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#home .titulo-destaque {
+    width: 100%;
+    text-align: center;
+}
+
+.texto-padrao {
+    color: black;
+    font-family: courier, monospace;
+    font-size: 110%;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.botao-com-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.botao-com-icone img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+footer#rodape {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.texto-rodape {
+    font-size: 13px;
+    color: white;
 }
 
 img {
@@ -23,150 +192,6 @@ img {
     height: auto;
 }
 
-#topo {
-    background-color: #137984;
-    color: #fff;
-    padding: 18px 24px;
-    text-align: center;
-}
-
-.titulo-topo {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-#corpo-principal {
-    display: flex;
-    flex: 1;
-    align-items: stretch;
-    min-height: 0;
-}
-
-#menu-lateral {
-    width: 240px;
-    flex-shrink: 0;
-    background-color: #0f5f67;
-    padding: 16px 12px;
-}
-
-.titulo-menu {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
-}
-
-.lista-menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.lista-menu a {
-    display: block;
-    text-decoration: none;
-}
-
-.lista-menu button {
-    width: 100%;
-    background-color: #1aa3b0;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 10px;
-    font-size: 0.95rem;
-    cursor: pointer;
-}
-
-.lista-menu button:hover,
-.lista-menu button:focus {
-    background-color: #14818c;
-}
-
-#conteudo-janela {
-    flex: 1;
-    background-color: #fff;
-    padding: 24px;
-    overflow: auto;
-}
-
-.titulo-destaque {
-    color: #137984;
-    margin: 16px 0 8px;
-}
-
-.texto-padrao {
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
-
-.link {
-    display: inline-block;
-    color: #137984;
-    font-weight: 700;
-    margin-right: 12px;
-    margin-bottom: 8px;
-}
-
-#rodape {
-    background-color: #137984;
-    color: #fff;
-    text-align: center;
-    padding: 12px 16px;
-}
-
-.texto-rodape {
-    font-size: 0.9rem;
-}
-
-/* Home */
-.secao-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.secao-home .titulo-destaque {
-    width: 100%;
-    text-align: center;
-}
-
-.botao-home-foto {
-    background-color: green;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.botao-home-foto img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 50%;
-}
-
-/* Currículos */
-.foto-curriculo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #137984;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-    margin-bottom: 15px;
-}
-
-/* Temas livres */
 .foto-tema {
     display: block;
     width: min(100%, 200px);
@@ -180,13 +205,16 @@ img {
     border: 1px solid #000;
 }
 
-@media (max-width: 768px) {
-    #corpo-principal {
+@media screen and (max-width: 767px) {
+    main#corpo-principal {
         flex-direction: column;
     }
 
-    #menu-lateral {
+    nav#menu-lateral {
+        flex: none;
         width: 100%;
+        min-height: auto;
+        padding-bottom: 20px;
     }
 
     .lista-menu {
@@ -200,15 +228,17 @@ img {
     }
 
     #conteudo-janela {
-        padding: 16px;
+        width: 100%;
     }
 
-    .titulo-topo {
-        font-size: 1.4rem;
+    #home {
+        height: auto;
+        min-height: 0;
+        padding: 20px 0;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .lista-menu {
         flex-direction: column;
     }
@@ -217,9 +247,7 @@ img {
         flex: 1 1 auto;
     }
 
-    .foto-curriculo {
-        width: 120px;
-        height: 120px;
+    .foto {
         margin-left: auto;
         margin-right: auto;
     }

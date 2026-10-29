@@ -3,9 +3,9 @@
   "model": "portal.conteudo",
   "pk": 1,
   "fields": {
-    "titulo": "Inicio",
+    "titulo": "Início",
     "slug": "inicio",
-    "conteudo_html": "<section id=\"home\" class=\"secao-home\">\n    <h2 class=\"titulo-destaque\">Bem-vindos!</h2>\n\n    <a href=\"/conteudo/curriculo-arthur/\">\n        <button class=\"botao-home-foto\" type=\"button\" aria-label=\"Ver currículo de Arthur\">\n            <img src=\"/static/portal/img/Arthur_Foto.png\" alt=\"Foto de Arthur\">\n        </button>\n    </a>\n\n    <a href=\"/conteudo/curriculo-samila/\">\n        <button class=\"botao-home-foto\" type=\"button\" aria-label=\"Ver currículo de Samila\">\n            <img src=\"/static/portal/img/samila.jpg\" alt=\"Foto de Samila\">\n        </button>\n    </a>\n</section>",
+    "conteudo_html": "<section id=\"home\">\n    <h2 class=\"titulo-destaque\">Bem-vindos!</h2>\n    <a href=\"/conteudo/curriculo-arthur/\" class=\"botao-com-icone\" aria-label=\"Ver currículo de Arthur\">\n        <img src=\"/static/portal/img/Arthur_Foto.png\" alt=\"Foto de Arthur\">\n    </a>\n    <a href=\"/conteudo/curriculo-samila/\" class=\"botao-com-icone\" aria-label=\"Ver currículo de Samila\">\n        <img src=\"/static/portal/img/samila.jpg\" alt=\"Foto de Samila\">\n    </a>\n</section>",
     "ativo": true
   }
 },
@@ -13,9 +13,9 @@
   "model": "portal.conteudo",
   "pk": 2,
   "fields": {
-    "titulo": "Curriculo Samila",
+    "titulo": "Currículo Samila",
     "slug": "curriculo-samila",
-    "conteudo_html": "<section id=\"curriculo-samila\">\n    <img src=\"/static/portal/img/samila.jpg\" alt=\"Foto de Samila Maria\" title=\"Minha foto\" class=\"foto-curriculo\">\n\n    <p class=\"texto-padrao\"><b>Nome:</b> Samila Maria Pereira Cabral</p>\n    <p class=\"texto-padrao\"><b>Idade:</b> 17 anos</p>\n    <p class=\"texto-padrao\"><b>Experiências:</b> Sem Experiências</p>\n\n    <article>\n        <h3 class=\"titulo-destaque\">OBJETIVO</h3>\n        <p class=\"texto-padrao\">Desenvolver minhas capacidades, cumprir com as atribuições designadas e agregar valores através de um trabalho focado em produtividade, criatividade e responsabilidade.</p>\n    </article>\n\n    <article>\n        <h3 class=\"titulo-destaque\">CONTATO</h3>\n        <p class=\"texto-padrao\">Lagoa do Serrote, Estrela de Alagoas - AL</p>\n        <p class=\"texto-padrao\">(82) 98218-6215</p>\n        <p class=\"texto-padrao\">smpc1@aluno.ifal.edu.br</p>\n    </article>\n\n    <article>\n        <h3 class=\"titulo-destaque\">REDES</h3>\n        <a href=\"https://github.com/samila-maria\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Acesse meu perfil no GitHub\" class=\"link\">Meu GitHub</a>\n    </article>\n\n    <article>\n        <h3 class=\"titulo-destaque\">HABILIDADES PESSOAIS</h3>\n        <p class=\"texto-padrao\">Capacidade de liderar e motivar equipes.</p>\n        <p class=\"texto-padrao\">Adaptabilidade a novas funções e ambientes.</p>\n        <p class=\"texto-padrao\">Habilidade para se relacionar com diferentes personalidades.</p>\n    </article>\n</section>",
+    "conteudo_html": "<section id=\"curriculo-samila\">\n    <img src=\"/static/portal/img/samila.jpg\" alt=\"Foto de Samila Maria\" title=\"Minha foto\" class=\"foto\">\n    <p class=\"texto-padrao\"><b>Nome:</b> Samila Maria Pereira Cabral</p>\n    <p class=\"texto-padrao\"><b>Idade:</b> 17 anos</p>\n    <p class=\"texto-padrao\"><b>Experiências:</b> Sem Experiências</p>\n    <article>\n        <h3 class=\"titulo-destaque\">OBJETIVO</h3>\n        <p class=\"texto-padrao\">Desenvolver minhas capacidades, cumprir com as atribuições designadas e agregar valores através de um trabalho focado em produtividade, criatividade e responsabilidade.</p>\n    </article>\n    <article>\n        <h3 class=\"titulo-destaque\">CONTATO</h3>\n        <p class=\"texto-padrao\">Lagoa do Serrote, Estrela de Alagoas - AL</p>\n        <p class=\"texto-padrao\">(82) 98218-6215</p>\n        <p class=\"texto-padrao\">smpc1@aluno.ifal.edu.br</p>\n    </article>\n    <article>\n        <h3 class=\"titulo-destaque\">REDES</h3>\n        <a href=\"https://github.com/samila-maria\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Acesse meu perfil no GitHub\" class=\"link\">Meu GitHub</a>\n    </article>\n    <article>\n        <h3 class=\"titulo-destaque\">HABILIDADES PESSOAIS</h3>\n        <p class=\"texto-padrao\">Capacidade de liderar e motivar equipes.</p>\n        <p class=\"texto-padrao\">Adaptabilidade a novas funções e ambientes.</p>\n        <p class=\"texto-padrao\">Habilidade para se relacionar com diferentes personalidades.</p>\n    </article>\n</section>",
     "ativo": true
   }
 },
@@ -25,7 +25,7 @@
   "fields": {
     "titulo": "Tema livre Samila",
     "slug": "tema-livre-samila",
-    "conteudo_html": "<section id=\"tema-samila\">\n    <article>\n        <h2 class=\"titulo-destaque\">Léo Foguete: De Porteiro a Estrela</h2>\n        <img src=\"/static/portal/img/leo_foguete.jpg\" alt=\"Foto do cantor Léo Foguete\" title=\"Léo Foguete\" class=\"foto-tema\">\n        <p class=\"texto-padrao\"><i>Léo Foguete, cujo nome verdadeiro é Mayrllon de Castro, é um jovem de Petrolina que virou um fenômeno na música. Antes de ficar famoso, trabalhou como entregador e porteiro.</i></p>\n\n        <h3 class=\"titulo-destaque\">O começo de tudo</h3>\n        <p class=\"texto-padrao\">A música sempre esteve na sua vida. Ganhou seu primeiro violão da avó e começou tocando em barzinhos.</p>\n        <p><a href=\"https://youtu.be/oB8D1TCPoo4\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Ouça agora um dos seus sucessos no YouTube!</a></p>\n    </article>\n</section>",
+    "conteudo_html": "<section id=\"tema-samila\">\n    <article>\n        <h2 class=\"titulo-destaque\">Léo Foguete: De Porteiro a Estrela</h2>\n        <img src=\"/static/portal/img/leo_foguete.jpg\" alt=\"Foto do cantor Léo Foguete\" title=\"Léo Foguete\" class=\"foto-tema\">\n        <p class=\"texto-padrao\"><i>Léo Foguete, cujo nome verdadeiro é Mayrllon de Castro, é um jovem de Petrolina que virou um fenômeno na música. Antes de ficar famoso, trabalhou como entregador e porteiro.</i></p>\n        <h3 class=\"titulo-destaque\">O começo de tudo</h3>\n        <p class=\"texto-padrao\">A música sempre esteve na sua vida. Ganhou seu primeiro violão da avó e começou tocando em barzinhos.</p>\n        <p><a href=\"https://youtu.be/oB8D1TCPoo4\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Ouça agora um dos seus sucessos no YouTube!</a></p>\n    </article>\n</section>",
     "ativo": true
   }
 },
@@ -33,9 +33,9 @@
   "model": "portal.conteudo",
   "pk": 4,
   "fields": {
-    "titulo": "Curriculo Arthur",
+    "titulo": "Currículo Arthur",
     "slug": "curriculo-arthur",
-    "conteudo_html": "<section id=\"curriculo-arthur\">\n    <img src=\"/static/portal/img/Arthur_Foto.png\" class=\"foto-curriculo\" alt=\"Foto de Arthur Barbosa\">\n\n    <p class=\"texto-padrao\"><b>Nome:</b> Arthur Barbosa dos Santos</p>\n    <p class=\"texto-padrao\"><b>Idade:</b> 17 anos</p>\n    <p class=\"texto-padrao\"><b>Experiências:</b> Muitíssimas experiências</p>\n\n    <article>\n        <h2 class=\"titulo-destaque\">OBJETIVO</h2>\n        <p class=\"texto-padrao\">Colaborar o máximo possível e progredir na carreira como programador</p>\n    </article>\n\n    <article>\n        <h2 class=\"titulo-destaque\">CONTATO</h2>\n        <p class=\"texto-padrao\">Rua Rosendo Rodrigues, Bairro Vila Maria, Palmeira dos Índios, AL</p>\n        <p class=\"texto-padrao\">(82) 99436-4682</p>\n        <p class=\"texto-padrao\">abs43@aluno.ifal.edu.br</p>\n    </article>\n\n    <article>\n        <h2 class=\"titulo-destaque\">REDES</h2>\n        <a href=\"https://github.com/GreenHackTale\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Meu github</a>\n        <a href=\"https://www.instagram.com/arthur_barbosa24/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Meu instagram</a>\n    </article>\n\n    <article>\n        <h3 class=\"titulo-destaque\">HABILIDADES PESSOAIS</h3>\n        <p class=\"texto-padrao\">Adaptabilidade a novas funções e ambientes.</p>\n        <p class=\"texto-padrao\">Inglês médio</p>\n        <p class=\"texto-padrao\">Muito conhecimento técnico em informática</p>\n    </article>\n</section>",
+    "conteudo_html": "<section id=\"curriculo-arthur\">\n    <img src=\"/static/portal/img/Arthur_Foto.png\" class=\"foto\" alt=\"Foto de Arthur Barbosa\">\n    <p class=\"texto-padrao\"><b>Nome:</b> Arthur Barbosa dos Santos</p>\n    <p class=\"texto-padrao\"><b>Idade:</b> 17 anos</p>\n    <p class=\"texto-padrao\"><b>Experiências:</b> Muitíssimas experiências</p>\n    <article>\n        <h2 class=\"titulo-destaque\">OBJETIVO</h2>\n        <p class=\"texto-padrao\">Colaborar o máximo possível e progredir na carreira como programador</p>\n    </article>\n    <article>\n        <h2 class=\"titulo-destaque\">CONTATO</h2>\n        <p class=\"texto-padrao\">Rua Rosendo Rodrigues, Bairro Vila Maria, Palmeira dos Índios, AL</p>\n        <p class=\"texto-padrao\">(82) 99436-4682</p>\n        <p class=\"texto-padrao\">abs43@aluno.ifal.edu.br</p>\n    </article>\n    <article>\n        <h2 class=\"titulo-destaque\">REDES</h2>\n        <a href=\"https://github.com/GreenHackTale\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Meu GitHub</a>\n        <a href=\"https://www.instagram.com/arthur_barbosa24/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Meu Instagram</a>\n    </article>\n    <article>\n        <h3 class=\"titulo-destaque\">HABILIDADES PESSOAIS</h3>\n        <p class=\"texto-padrao\">Adaptabilidade a novas funções e ambientes.</p>\n        <p class=\"texto-padrao\">Inglês médio</p>\n        <p class=\"texto-padrao\">Muito conhecimento técnico em informática</p>\n    </article>\n</section>",
     "ativo": true
   }
 },
@@ -45,7 +45,7 @@
   "fields": {
     "titulo": "Tema livre Arthur",
     "slug": "tema-livre-arthur",
-    "conteudo_html": "<section id=\"tema-arthur\" class=\"tema-arthur\">\n    <article>\n        <h2 class=\"titulo-destaque\">Many Dogs - Arthur</h2>\n        <img src=\"/static/portal/img/dog1.jpg\" class=\"foto-dogs\" alt=\"Cachorros rotativos\">\n        <p class=\"texto-padrao\">Clique para mudar</p>\n    </article>\n</section>",
+    "conteudo_html": "<section id=\"tema-arthur\">\n    <article>\n        <h2 class=\"titulo-destaque\">Many Dogs - Arthur</h2>\n        <img src=\"/static/portal/img/dog1.jpg\" class=\"foto-dogs\" alt=\"Cachorros rotativos\">\n        <p class=\"texto-padrao\">Clique para mudar</p>\n    </article>\n</section>",
     "ativo": true
   }
 },
@@ -53,7 +53,7 @@
   "model": "portal.menu",
   "pk": 1,
   "fields": {
-    "titulo": "Inicio",
+    "titulo": "Início",
     "tipo_destino": "interno",
     "ordem": 1,
     "ativo": true,
@@ -65,7 +65,7 @@
   "model": "portal.menu",
   "pk": 2,
   "fields": {
-    "titulo": "Curriculo Samila",
+    "titulo": "Currículo Samila",
     "tipo_destino": "interno",
     "ordem": 2,
     "ativo": true,
@@ -89,7 +89,7 @@
   "model": "portal.menu",
   "pk": 4,
   "fields": {
-    "titulo": "Curriculo Arthur",
+    "titulo": "Currículo Arthur",
     "tipo_destino": "interno",
     "ordem": 4,
     "ativo": true,
@@ -118,7 +118,7 @@
     "ordem": 6,
     "ativo": true,
     "conteudo": null,
-    "url_externa": "https://github.com/samila-maria/meu_projeto_django"
+    "url_externa": "https://github.com/samila-maria"
   }
 },
 {
@@ -130,7 +130,7 @@
     "ordem": 7,
     "ativo": true,
     "conteudo": null,
-    "url_externa": "https://github.com/PumpedUpEmoRocker/Repositorio-do-Projeto-Django"
+    "url_externa": "https://github.com/GreenHackTale"
   }
 }
 ]
